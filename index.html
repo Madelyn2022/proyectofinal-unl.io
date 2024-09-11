@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <title>LP Desarrollador Web</title>
+  </head>
+
+  <body>
+    <!-- SECCION I N I C I O -->
+
+    <style>
+      #inicio {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("img/fondoprincipal.gif");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+   }
+    </style>
+    <section id="inicio">
+      <div class="contenido">
+        <header>
+          <div class="contenido-header">
+            <h1>/MG/</h1>
+            <nav id="nav" class="">
+              <ul id="links">
+                <li>
+                  <a
+                    href="#inicio"
+                    class="seleccionado"
+                    onclick="seleccionar(this)"
+                    >INICIO</a
+                  >
+                </li>
+                <li>
+                  <a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a>
+                </li>
+                <li>
+                  <a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a>
+                </li>
+                <li>
+                  <a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a>
+                </li>
+                <li>
+                  <a href="#contacto" onclick="seleccionar(this)">CONTACTO</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Icono del menu responsive -->
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="redes">
+              <a href="https://youtube.com/" class="youtube" target="_blank">
+                <i class="fa-brands fa-youtube"></i
+              ></a>
+              <a href="https://facebook.com/" class="facebook" target="_blank">
+                <i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://instagram.com/"
+                class="instagram"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram-square"></i
+              ></a>
+            </div>
+          </div>
+        </header>
+        <div class="presentacion">
+          <p class="bienvenida">Bienvenidos</p>
+          <h2>Soy <span>Madelyn</span>, Diseñadora Grafica</h2>
+          <p class="descripcion">DISEÑADORA GRAFICA</p>
+          <a href="#portfolio">Ir a Portafolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+      <div class="contenedor-foto">
+        <img src="img/foto.jpg" alt="" />
+      </div>
+      <div class="sobremi">
+        <p class="titulo-seccion">Sobre Mi</p>
+        <h2>Hola, Soy <span>Madelyn Gutierrez</span></h2>
+        <h3>Deseñadora Grafica</h3>
+        <p>
+          Soy una Diseñadora, apasionada por el arte y el diseño.Me destaco como
+          multifacetica mi especialidad esta tanto en lo grafico ,audiovisual y
+          desarrollo web.Mis estudios me han permitido aprender varias areas,las
+          cuales en algunas me destaco como freelance.
+        </p>
+        <p>
+          Tengo conocimento en tecnologias y herramientas que actualmente son
+          muy usadas .
+        </p>
+        <a href="pdf/cv2023.pdf" download="CVMADELYN-GUTIERREZ.pdf"
+          >Descargar CV</a
+        >
+      </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+      <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+      <div class="fila">
+        <div class="servicio">
+          <span class="icono"> <i class="fa-solid fa-code"></i></span>
+          <h4>Diseño de Sitios Web</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>VSC</li>
+            <li>Dreamweaver</li>
+            <li>Atom</li>
+          </ul>
+          <p>
+            Algunos de los lenguajes que estoy profundizando mas para el
+            desarrollo web son: Javascript ,Css ,Html y Css.
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono"
+            ><i class="fa-sharp fa-solid fa-address-card"></i
+          ></span>
+          <h4>Diseño De Tarjetas Personales</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Premiere</li>
+            <li>VistaCreate</li>
+            <li>Espress</li>
+          </ul>
+          <p>
+            Una forma muy elegante de destacar ,diseño , presentacion ,uso
+            profesional como empresarial
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono"
+            ><i class="fa-sharp fa-solid fa-envelope"></i
+          ></span>
+          <h4>Diseño De Invitaciones & folleteria</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>InDesing</li>
+            <li>Illustrator</li>
+            <li>Canva</li>
+          </ul>
+          <p>
+            Invitaciones para todo tipo de evento , grafica , animada , como en
+            video.Tanto folleteria para su negocio o requerimiento personal
+          </p>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-dragon"></i></span>
+          <h4>Diseños De Logos</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Pixir</li>
+            <li>Inkscape</li>
+            <li>Canva</li>
+          </ul>
+          <p>
+            Si la marca de tu negocio o empresa es lo mas importante para usted
+            y necesita cambios para su logo , te muestro el camino
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-image"></i></span>
+          <h4>Edicion De Fotografica</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>InDesing</li>
+          </ul>
+          <p>
+            Edicion fotografica , fotomontaje , efectos , filtros , nitidez ,
+            cambio de fondo y mas ,deacuerdo a su requerimiento
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-video"></i></span>
+          <h4>Edicion De Videos</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>PremierePro</li>
+            <li>FilmoraGo</li>
+            <li>Pixlr</li>
+          </ul>
+          <p>
+            Desarrollo edicion profesional de videos , corte ,etiquetas,
+            transiciones, ajustes de audio y mas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+
+    
+    <div class="contenedor-skills" id="skills">
+      <style>
+        .contenedor-skills {
+      background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)),
+      url("img/fondoprincipal1.gif");
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+     background-position: center center;
+     padding: 100px 0;
+    text-align: center;
+     }
+      </style>
+      <h3>HABILIDADES</h3>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Html & Css</p>
+          <span class="porcentaje">70%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="html"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Canva</p>
+          <span class="porcentaje">90%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="cv"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Adobe Illustrator</p>
+          <span class="porcentaje">90%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="ai"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Photoshop</p>
+          <span class="porcentaje">95%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="ps"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+      <h3 class="titulo-seccion">Mis Proyectos</h3>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a href="tarjetasdepresentacion.html">
+            <img src="img/proyecto1.jpg" alt="" />
+          </a>
+          <div class="info">
+            <a class="info" href="tarjetasdepresentacion.html"
+              >Tarjetas de Presentacion</a
+            >
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a href="logos.html">
+            <img src="img/proyecto2.jpg" alt="" />
+          </a>
+          <div class="info">
+            <a class="info" href="logos.html">Logos Para Tu Negocio</a>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a href="invitaciones.html">
+            <img src="img/proyecto3.jpg" alt="" />
+          </a>
+          <div class="info">
+            <a class="info" href="invitaciones.html"
+              >Invitaciones Para Todo Eventos</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a href="invitacionesdigitales.html">
+            <img src="img/proyecto4.jpg" alt="" />
+          </a>
+          <div class="info">
+            <a class="info" href="invitacionesdigitales.html"
+              >Invitaciones Digitales</a
+            >
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a href="folleteriacarteleria.html">
+            <img src="img/proyecto5.jpg" alt="" />
+          </a>
+          <div class="info">
+            <a class="info" href="folleteriacarteleria.html"
+              >Folleteria Carteleria</a
+            >
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a href="edicionfotografica.html">
+            <img src="img/proyecto6.jpg" alt="" />
+          </a>
+          <div class="info">
+            <a class="info" href="edicionfotografica.html"
+              >Edicion Fotografica
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a href="diseñosredessociales.html">
+            <img src="img/proyecto7.jpg" alt="" />
+          </a>
+          <div class="info">
+            <a class="info" href="diseñosredessociales.html"
+              >Diseño De Marketing(REDES SOCIALES)</a
+            >
+            <p>Diseño Multimedia</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a href="anuncioscomerciales.html">
+            <img src="img/proyecto8.jpg" alt="" />
+          </a>
+          <div class="info">
+            <a class="info" href="anuncioscomerciales.html"
+              >Anuncios Comerciales</a
+            >
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a href="paginasweb.html">
+            <img src="img/proyecto9.jpg" alt="" />
+          </a>
+          <div class="info">
+            <a class="info" href="paginasweb.html"
+              >Paginas Web(Landing Pages)</a
+            >
+            <p>Diseño Web</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+      <h3 class="titulo-seccion">Contactanos ahora</h3>
+      <div class="contenedor-form">
+        <form
+          action="https://formsubmit.co/madelin.m2021@gmail.com"
+          method="POST"
+        >
+          <div class="fila mitad">
+            <input
+              type="text"
+              placeholder="Nombre Completo *"
+              class="input-mitad"
+            />
+            <input
+              type="email"
+              placeholder="Dirección de Email"
+              class="input-mitad"
+            />
+          </div>
+          <div class="fila">
+            <input type="text" placeholder="Tema..." class="input-full" />
+          </div>
+          <div class="fila">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Tu Mensaje..."
+              class="input-full"
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Enviar Mensaje" class="btn-enviar" />
+        </form>
+      </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+      <p>Todos los derechos reservados - 2023</p>
+      <div class="redes">
+        <a href="https://youtube.com/" class="youtube" target="_blank">
+          <i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="https://facebook.com/" class="facebook" target="_blank">
+          <i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://instagram.com/" class="instagram" target="_blank">
+          <i class="fa-brands fa-instagram-square"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
