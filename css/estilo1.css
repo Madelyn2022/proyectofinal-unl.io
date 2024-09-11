@@ -1,0 +1,72 @@
+/*SECCION DE LOGOS*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    
+  }
+  
+  .title {
+    font-size: 28px;
+    position: relative;
+    top: 1cm;
+    font-weight: bold;
+    color: #f9517e;
+    margin-bottom: 20px
+   
+    
+  }
+  
+  .table {
+    width: calc(100% - 6cm);
+    border-collapse: collapse;
+    margin: 3cm auto;
+    transform: scale(0.9);
+  }
+  
+  .table th,
+  .table td {
+    padding: 10px;
+    border: 1px solid #f5ebeb;
+    font-size: 18px;
+  }
+  
+
+section{
+    display: flex;
+    width: 600px;
+    height: 430px;
+    }
+    section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    border: none;
+    box-shadow: 0 0 10px #0a0a0a, 0 0 20px #ff5080,0 0 30px  #f789a6,0 0 40px #fffefe;
+    }
+    section img:hover {
+        cursor: crosshair;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+    .personaje1 {
+        /* Estilos del personaje */
+        width: 400px; /* Ajusta el ancho del muñeco según tus necesidades */
+        height: 600px; /* Ajusta la altura del muñeco según tus necesidades */
+        position: relative; /* Establece la posición relativa para el muñeco */
+        animation: move 2s infinite alternate; /* Aplica la animación al muñeco */
+      }
+      @keyframes move {
+        0% {
+          left: 0,1; /* Posición inicial del muñeco */
+        }
+        100% {
+          left: 300px; /* Posición final del muñeco */
+        }
+      }

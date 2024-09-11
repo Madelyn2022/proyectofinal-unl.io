@@ -1,0 +1,173 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .table {
+    width: calc(100% - 226.8px);
+    border-collapse: collapse;
+    margin: 3cm auto;
+    transform: scale(0.9);
+  }
+  
+  .table th {
+    background-color: #b4a6a6e0;
+    color: rgb(103, 93, 93);
+    padding: 10px;
+    border: 1px solid #f5ebeb;
+    font-size: 18px;
+  }
+  
+  .table td {
+    padding: 10px;
+    border: 1px solid #f5ebeb;
+    font-size: 18px;
+    background-color: #c9c4c4;
+    color: #111135;
+  }
+  .hi-slide{ 
+    position: relative;
+    width: 754px;
+    height: 292px;
+    border-radius: 50px;
+    margin: 115px auto 0;
+  }
+  .hi-slide .hi-next,
+  .hi-slide .hi-prev {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: all 0.7s;
+    font-size: 20px;
+    font-weight: bold;
+  }
+.hi-slide .hi-next:hover,
+.hi-slide .hi-prev:hover {
+  opacity: 1;
+  background-color: white;
+}
+.hi-slide .hi-prev{ left: -60px;}
+  .hi-slide .hi-prev::before{ 
+    content: '<';
+}
+.hi-slide .hi-next{
+     right: -60px;
+
+}
+.hi-slide .hi-next::before{ 
+    content: '>';
+    }
+.hi-slide > ul{
+    list-style: none;
+    position: relative;
+    width: 754px; 
+    height: 292px;
+    margin: 0;
+    padding: 0;
+}
+.hi-slide > ul > li{
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: 377px;
+    top: 147px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 3px solid white;
+    cursor: pointer;
+    background-color: #333;
+}
+.hi-slide > ul > li img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+/*SECCION  DE GALERIA DE VIDEOS DE ANUNCIOS COMERCIALES*/
+.gallery {
+    position: relative;
+    width: 25%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .gallery-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+  }
+  
+  .gallery-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+   /* SECCION DE REDES SOCIALES */
+   .slider {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+  }
+  
+  .slider ul {
+    display: flex;
+    animation: cambio 15s infinite alternate linear;
+    width: 450%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .slider li {
+    width: 50%;
+    list-style: none;
+  }
+  
+  .slider img {
+    width: 98%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @keyframes cambio {
+    0% {
+      margin-left: 0;
+    }
+    20% {
+      margin-left: 0;
+    }
+    25% {
+      margin-left: -100%;
+    }
+    45% {
+      margin-left: -100%;
+    }
+    50% {
+      margin-left: -200%;
+    }
+    70% {
+      margin-left: -200%;
+    }
+    75% {
+      margin-left: -300%;
+    }
+    90% {
+      margin-left: -300%;
+    }
+  }
+  
